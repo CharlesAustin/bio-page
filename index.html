@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Atkinson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minWidth: 200.00,
+                minHeight: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color1: 0xf7d827,
+                color2: 0x56d0ff,
+                birdSize: 0.80,
+                wingSpan: 23.00,
+                separation: 100.00,
+                alignment: 7.00,
+                cohesion: 1.00,
+                quantity: 1.00,
+                backgroundAlpha: 0.0
+            })
+        })
+        
+        setTimeout(() => {
+            const pageContent = [...document.querySelectorAll('main, header')]
+            .forEach(elem => elem.style.opacity = 1);
+        }, 1000)
+        
+    </script>
+</head>
+
+<body>
+    <div id="vanta"></div>
+    <header class="profile-header">
+        <img class="profile-img" src="images/profile-image.webp" alt="a picture of me" height="250" width="auto" />
+        <h1 class="handle-title">Austin Atkinson</h1>
+    </header>
+    <main>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/austin-atkinson-0687978a/">
+                    <img src="./images/linkedin-icon.svg" alt="linkedin logo icon" width="24" height="auto" />
+                    Linkedin
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/CharlesAustin">
+                    <img src="./images/github-icon.svg" alt="github logo icon" width="24" height="auto" />
+                    GitHub
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/austintacious_live">
+                    <img src="./images/instagram-icon.svg" alt="instagram logo icon" width="24" height="auto" />
+                    Instagram
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com/Man_ofthe_North">
+                    <img src="./images/twitter-icon.svg" alt="twitter logo icon" width="24" height="auto" />
+                    Twitter
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://youtube.com">
+                    <img src="./images/youtube-icon.svg" alt="youtube logo icon" width="24" height="auto" />
+                    YouTube
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
