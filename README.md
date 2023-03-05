@@ -1,6 +1,6 @@
-# bio-page
+# Bio-page Exercise
 
-A simple bio page inspired by [devaslife](https://www.youtube.com/watch?v=u71pHOyvBp0)
+A concise bio page inspired by [devaslife](https://www.youtube.com/watch?v=u71pHOyvBp0)
 
 ## Built with
 HTML, CSS, JavaScript
